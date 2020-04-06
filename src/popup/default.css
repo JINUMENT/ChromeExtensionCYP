@@ -1,0 +1,9 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body .container .row .col .list-group {
+  margin: 0px;
+  padding: 0px;
+}

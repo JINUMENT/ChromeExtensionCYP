@@ -1,0 +1,28 @@
+{
+  "name": "caution your page",
+  "description" : "Show warning on page",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "./src/popup/default.html"
+  },
+  "background":{
+    "scripts": ["lib/jquery-3.4.1.slim.min.js", "background.js"]
+  },
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*"
+      ],
+      "js": ["background.js"]
+    }
+  ],
+  "icons": {
+    "16": "caution-16.png",
+    "128": "caution-128.png"
+  }
+}
